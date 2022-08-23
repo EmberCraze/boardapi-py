@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - "./boardapi:/usr/lib/app/boardapi"
+    ports:
+      - "8022:8022"
